@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saxon Taylor | WIL Professional Portfolio</title>
+    <style>
+        :root {
+            --kimberley-red: #8B4513;
+            --kimberley-ochre: #D2691E;
+            --bush-green: #2F4F2F;
+            --sandy-beige: #F5F5DC;
+            --charcoal: #36454F;
+            --light-green: #8FBC8F;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background-color: #fafafa;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--bush-green);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--bush-green);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--kimberley-ochre);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 60px;
+            background: linear-gradient(135deg, var(--bush-green) 0%, var(--kimberley-red) 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        
+        /* Sections */
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        h2 {
+            color: var(--bush-green);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--kimberley-ochre);
+            padding-left: 1rem;
+        }
+        
+        h3 {
+            color: var(--kimberley-red);
+            margin: 2rem 0 1rem 0;
+        }
+        
+        /* Content Blocks */
+        .content-block {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+        }
+        
+        .placeholder-box {
+            border: 2px dashed var(--light-green);
+            padding: 2rem;
+            text-align: center;
+            color: var(--bush-green);
+            background: var(--sandy-beige);
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: var(--bush-green);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 0.3rem;
+        }
+        
+        .diary-entry {
+            border-left: 3px solid var(--kimberley-ochre);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            background: #f9f9f9;
+            padding: 1rem;
+        }
+        
+        .artefact-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .artefact-card h4 {
+            color: var(--kimberley-red);
+            margin-bottom: 0.5rem;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .highlight {
+            background: var(--sandy-beige);
+            padding: 1rem;
+            border-left: 4px solid var(--bush-green);
+            margin: 1rem 0;
+        }
+        
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: var(--charcoal);
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { gap: 1rem; }
+            section { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#synopsis">Placement</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#deliverables">Deliverables</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Saxon Taylor</h1>
+        <div class="hero-subtitle">WIL Professional Portfolio | Natural Product Drug Discovery</div>
+        <div style="margin-top: 1rem; font-size: 0.9rem;">Institute for Biomedicine and Glycomics | Griffith University</div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        
+        <div class="content-block">
+            <p><strong>Australian, 21 years old, Bachelor of Science student at Griffith University (Nathan Campus).</strong></p>
+            
+            <p>Currently immersed in the intersection of computational biology and natural product chemistry. The recent developments in AI are not just exciting—they're the future of drug discovery. My focus has shifted toward extracurricular research with the Institute for Biomedicine and Glycomics, where what started as a course requirement evolved into serious research with 24/7 lab access and an upcoming Honours project in machine learning.</p>
+            
+            <h3>Core Experience</h3>
+            <ul>
+                <li>Research Assistant at Institute for Biomedicine and Glycomics (GRIDD legacy)</li>
+                <li>Systematic literature review specialist: Kimberley bush medicine phytochemistry</li>
+                <li>Computational analysis: SwissADME, ChemDraw structure visualization, Python-based chemical database processing</li>
+                <li>Collaboration facilitator: Guided 4 medical students through literature review methodology</li>
+                <li>ML/Docking researcher: AlphaFold, Boltz-2, RunPod cloud compute workflows</li>
+            </ul>
+            
+            <h3>Technical Skills</h3>
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">SwissADME</span>
+                <span class="tag">ChemDraw</span>
+                <span class="tag">Literature Synthesis</span>
+                <span class="tag">Molecular Docking</span>
+                <span class="tag">AlphaFold</span>
+                <span class="tag">DataWarrior</span>
+                <span class="tag">Remote Research</span>
+            </div>
+            
+            <h3>Career Goals</h3>
+            <div class="highlight">
+                <p>Postgraduate research in natural product chemistry or pharmacology, with a view toward overseas research opportunities. Building toward publishing quality papers in high-impact journals to establish merit for international collaboration. Long-term: solving important problems in drug discovery through effective, adaptive approaches to new technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <h2>Resume</h2>
+        
+        <div class="content-block">
+            <h3>Education</h3>
+            <p><strong>Bachelor of Science</strong> | Griffith University | Ongoing<br>
+            Major: [Ecology/Conservation/Pharmacology - confirm major]</p>
+            
+            <h3>Professional Experience</h3>
+            <p><strong>Research Assistant (WIL Placement)</strong><br>
+            Institute for Biomedicine and Glycomics | Nov 2025 – Feb 2026</p>
+            <ul>
+                <li>Conducted comprehensive literature review on Kimberley bush medicine plants</li>
+                <li>Cross-referenced traditional Indigenous uses (King & Horsfall 2023) with phytochemical data</li>
+                <li>Processed thousands of chemical compounds via automated Python scripts</li>
+                <li>Database management and computational property assessment (SwissADME)</li>
+                <li>Presented findings to supervisor and research group</li>
+            </ul>
+            
+            <h3>Key Skills</h3>
+            <ul>
+                <li>Systematic literature searching (CSIRO, MEDLINE, Web of Science, Springer Nature)</li>
+                <li>Computational drug property assessment (Lipinski's Rule of Five, ADME)</li>
+                <li>Chemical structure visualization and SMILES stereochemistry correction</li>
+                <li>Large-scale database management and quality control</li>
+                <li>Independent remote research and time management</li>
+                <li>Scientific writing and research synthesis</li>
+            </ul>
+        </div>
+        
+        <div class="placeholder-box">
+            [UPLOAD FULL RESUME PDF HERE - Replace this div with: <br>
+            &lt;embed src="resume.pdf" width="100%" height="600px" /&gt;]
+        </div>
+    </section>
+
+    <!-- PLACEMENT SYNOPSIS -->
+    <section id="synopsis">
+        <h2>Placement Synopsis</h2>
+        
+        <div class="content-block">
+            <h3>Industry Context</h3>
+            <p>The Kimberley region represents a biodiversity hotspot with unique flora and rich traditional medicinal knowledge, yet significant gaps exist between documented Indigenous uses and modern phytochemical characterization. The Institute for Biomedicine and Glycomics (formerly GRIDD) operates NatureBank, Australia's largest natural product collection, and focuses on early-stage drug discovery for cancers, infectious diseases (malaria, tuberculosis), and antimicrobial resistance.</p>
+            
+            <p>Professor Miaomiao Liu's research program integrates native mass spectrometry, artificial intelligence, and natural product chemistry for molecular target identification. This placement addressed a critical bottleneck: the need for systematic literature review to expand the research portfolio beyond current bark-based analgesic studies, enabling competitive grant applications while maintaining laboratory productivity.</p>
+            
+            <h3>Placement Role</h3>
+            <p>Research Assistant position within the Institute for Biomedicine and Glycomics, conducting independent literature review under academic supervision. Work conducted primarily remotely with occasional on-site presence at N75 building, Nathan campus.</p>
+            
+            <p><strong>Core Activities:</strong></p>
+            <ul>
+                <li>Systematic literature searching across CSIRO Publishing, MEDLINE, Springer Nature Link, and Web of Science</li>
+                <li>Database population with stringent selection criteria (preparative chromatography and NMR structural elucidation required)</li>
+                <li>Cross-referencing scientific literature with King & Horsfall (2023) traditional use documentation</li>
+                <li>ChemDraw structure visualization for secondary metabolites</li>
+                <li>SwissADME computational analysis for drug-like properties</li>
+                <li>Python scripting for large-scale chemical data processing</li>
+            </ul>
+            
+            <h3>Deliverables</h3>
+            <ul>
+                <li>Structured database of ~100 Kimberley plants (expanded to thousands of compounds via automation) documenting traditional uses, isolated chemical structures, bioactivity data, and literature sources</li>
+                <li>15-page literature review draft synthesizing phytochemical and ethnobotanical findings</li>
+                <li>Prioritized list of research gaps identifying high-value targets for laboratory investigation</li>
+                <li>Python tools for SMILES stereochemistry correction and database cleaning</li>
+                <li>Evidence-based recommendations for future Kimberley collaboration</li>
+            </ul>
+            
+            <h3>Work Diary</h3>
+            <p><strong>Total Hours:</strong> 208 hours across 13 weeks (Nov 2025 – Feb 2026)<br>
+            <strong>Schedule:</strong> Flexible remote work with weekly progress meetings</p>
+            
+            <div class="diary-entry">
+                <strong>Weeks 1-4 (Nov): 40 hours</strong><br>
+                Database setup and literature search strategy implementation. Systematic searching across CSIRO, MEDLINE, Web of Science. Stringent selection criteria application.
+            </div>
+            
+            <div class="diary-entry">
+                <strong>Weeks 5-7 (Dec): 48 hours</strong><br>
+                Data extraction and database population. Cross-referencing with King & Horsfall (2023) traditional use documentation. Initial quality control protocols.
+            </div>
+            
+            <div class="diary-entry">
+                <strong>Weeks 8-10 (Jan): 48 hours</strong><br>
+                ChemDraw structure visualization for identified secondary metabolites. SwissADME computational analysis for drug-like properties. Python script development for automated processing. Christmas break: Dec 22 – Jan 4 (no work scheduled).
+            </div>
+            
+            <div class="diary-entry">
+                <strong>Weeks 11-13 (Feb): 72 hours</strong><br>
+                Pattern analysis and gap identification. Literature review writing and synthesis. Final revisions and formatting. Weekly progress meetings with Professor Liu throughout.
+            </div>
+        </div>
+    </section>
+
+    <!-- CRITICAL REFLECTION -->
+    <section id="reflection">
+        <h2>Critical Reflection</h2>
+        
+        <div class="content-block">
+            <p>[PLACEHOLDER: Expand to ~1000 words. Key themes to address below]</p>
+            
+            <h3>Key Learnings and Achievements</h3>
+            <ul>
+                <li><strong>Independence in Remote Research:</strong> Developed self-directed work capabilities, overcoming initial doubts about time management and statistical analysis without constant supervision.</li>
+                <li><strong>Integration of Knowledge Systems:</strong> Successfully bridged Indigenous ethnobotanical documentation (King & Horsfall 2023) with modern pharmacological databases, respecting traditional knowledge while applying scientific rigor.</li>
+                <li><strong>Technical Development:</strong> Advanced proficiency in systematic literature review methodology, computational analysis tools (SwissADME), and chemical structure visualization (ChemDraw).</li>
+                <li><strong>Coding for Chemistry:</strong> Recognized the limitation of manual data processing and developed Python solutions for large-scale chemical database management, including stereochemistry correction via PubChem API integration.</li>
+            </ul>
+            
+            <h3>Skills Developed</h3>
+            <p><strong>Discipline-Specific:</strong> Literature review methodology, phytochemical structure analysis, computational drug property assessment, database quality control, chemical data processing automation.</p>
+            
+            <p><strong>Transferable:</strong> Independent research capabilities, project management across extended timeline, problem-solving in ambiguous research contexts (incomplete datasets, conflicting nomenclature), professional communication with senior researchers.</p>
+            
+            <h3>Connection to Scientific Education</h3>
+            <p>This placement directly applied undergraduate coursework in ecology, conservation, and research methodology to real-world drug discovery pipelines. The experience highlighted how Griffith's emphasis on critical judgement and respect for First Peoples' knowledge (Graduate Attributes) translates into actual research practice.</p>
+            
+            <div class="highlight">
+                <strong>Critical Insight:</strong> While the remote flexibility was initially appealing, I regret the limited physical presence in the laboratory. The independence taught me self-reliance, but I missed opportunities for spontaneous collaboration and hands-on learning. Future placements will balance flexibility with physical presence to maximize learning.
+            </div>
+            
+            <h3>Challenges Overcome</h3>
+            <ul>
+                <li>Processing massive chemical datasets revealed the inadequacy of manual methods—necessitating rapid upskilling in Python automation</li>
+                <li>Reconciling traditional plant names with scientific nomenclature required careful cross-referencing and cultural sensitivity</li>
+                <li>Managing deadline pressure during the holiday period required strict self-discipline and proactive communication with supervisor</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- DELIVERABLES -->
+    <section id="deliverables">
+        <h2>Placement Deliverables</h2>
+        
+        <p class="highlight" style="margin-bottom: 2rem;">
+            The following artefacts represent tangible outputs from my WIL placement, demonstrating technical capabilities in computational natural product research and data management.
+        </p>
+
+        <!-- Artefact 1 -->
+        <div class="artefact-card">
+            <h4>Artefact 1: LOTUS Database Compounds (Filtered)</h4>
+            <p><strong>Description:</strong> Filtered dataset of 2,287 deduplicated secondary metabolites from Kimberley plants (primary metabolites removed). Generated via Python integration with the LOTUS database.</p>
+            
+            <p><strong>Technical Details:</strong> Automated extraction and cleaning pipeline removing duplicates and non-secondary metabolites. Presented to supervisor as foundational dataset for future analysis.</p>
+            
+            <p><strong>Files:</strong></p>
+            <div class="placeholder-box">
+                [EMBED: lotus_compounds_filtered.csv]<br>
+                [EMBED: lotus_compounds_filtered.json]<br>
+                <small>Replace with: &lt;a href="files/lotus_compounds_filtered.csv" download&gt;Download CSV&lt;/a&gt;</small>
+            </div>
+        </div>
+
+        <!-- Artefact 2 -->
+        <div class="artefact-card">
+            <h4>Artefact 2: Python Script for SMILES Stereochemistry Correction</h4>
+            <p><strong>Description:</strong> 160-line Python script developed to address supervisor feedback on missing stereochemistry in chemical structures. Queries PubChem API using InChIKeys to retrieve 3D structural data, with fallback mechanisms and edge-case validation.</p>
+            
+            <p><strong>Technical Implementation:</strong></p>
+            <ul>
+                <li>Input: SMILES strings without stereochemical descriptors</li>
+                <li>Process: InChIKey generation → PubChem PUG-REST API query → 3D coordinate retrieval → SMILES with stereochemistry output</li>
+                <li>Error handling: Fallback to compound titles for API misses, validation for edge cases</li>
+            </ul>
+            
+            <div class="placeholder-box">
+                [EMBED PYTHON CODE HERE]<br>
+                Option 1: &lt;pre&gt;&lt;code&gt;[paste code]&lt;/code&gt;&lt;/pre&gt;<br>
+                Option 2: Link to GitHub gist or .py file<br>
+                Option 3: Screenshot of code with syntax highlighting
+            </div>
+        </div>
+
+        <!-- Artefact 3 -->
+        <div class="artefact-card">
+            <h4>Artefact 3: Machine Learning for Molecular Docking – Research & Testing</h4>
+            <p><strong>Description:</strong> Background research and practical testing of ML-based docking tools for Honours project preparation. Investigated physics-based scoring vs. AI-powered co-folding approaches.</p>
+            
+            <p><strong>Technical Work:</strong></p>
+            <ul>
+                <li>Static protein ML blind docking tests with physics-based scoring validation</li>
+                <li>Cloud compute deployment on RunPod (60GB VRAM GPU instances) for AlphaFold processing</li>
+                <li>Cost-effective testing: ~$1/hour compute scaling for high-throughput screening</li>
+                <li>Agentic AI integration planning to offset limitations in emerging co-folding tools</li>
+            </ul>
+            
+            <p><strong>Supporting Materials:</strong></p>
+            <div class="placeholder-box">
+                [ATTACH PAPERS]<br>
+                1. Blind Virtual Screening at Scale (PDF)<br>
+                2. Boltz-2 Paper (PDF)<br>
+                3. <a href="https://www.runpod.io">RunPod Platform Link</a><br>
+                [INSERT TEST OUTPUTS/IMAGES HERE]
+            </div>
+            
+            <p><em>Note: Presented findings to research group; forms basis of upcoming Honours proposal on AI-assisted drug target validation.</em></p>
+        </div>
+
+        <!-- Artefact 4 -->
+        <div class="artefact-card">
+            <h4>Artefact 4: Collaboration with Medical Students – Poster Presentation</h4>
+            <p><strong>Description:</strong> Mentored 4 Bachelor of Medical Science students through a small-scale version of the Kimberley literature review project. Met approximately 7 times over the placement period (roughly weekly, with some gaps).</p>
+            
+            <p><strong>Activities:</strong></p>
+            <ul>
+                <li>Guided systematic literature review methodology</li>
+                <li>Assisted with plant selection and data extraction protocols</li>
+                <li>Reviewed draft presentations and provided feedback</li>
+                <li>Attended final poster symposium where students presented findings</li>
+            </ul>
+            
+            <p><strong>Outcome:</strong> Students successfully completed 10-plant review presentations; my comprehensive review extends this to full publication-scale analysis.</p>
+            
+            <div class="placeholder-box">
+                [INSERT POSTER IMAGE HERE]<br>
+                &lt;img src="poster.pdf" alt="Medical Student Collaboration Poster" style="width:100%; max-width:800px;" /&gt;<br>
+                <small>File location: /downloads/poster.pdf (convert to JPG/PNG for web display)</small>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Saxon Taylor | Bachelor of Science | Griffith University</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
+            WIL Professional Portfolio 2025 | Institute for Biomedicine and Glycomics
+        </p>
+    </footer>
+
+</body>
+</html>
